@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">HOME</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CERTIFICATIONS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">HOME</a></li>
+          <li><a href="#education" onclick="toggleMenu()">EDUCATION</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">CONTACT ME</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/fotor-20240704192251.png" alt="pp" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, My name is</p>
+        <h1 class="title">Harshita Bhardwaj</h1>
+        <p class="p3">I'm a passionate</p>
+        <span id="element"></span>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Harshita_Bhardwaj_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/harshita-bhardwaj-755871312/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/harshita-2109'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Get To Know </p>
+      <h1 class="title">About My Education</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Class XII</h3>
+              <p>Commerce</p>
+              <p>(2019-2020) <br />CBSE</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>GRADUATION</h3>
+              <p>Bachelor's of Arts in Computer Appliations and Economics</p>
+              <p>(2020-2023) <br />University of Delhi</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>POST GRADUATION</h3>
+              <p>Master's of Compter Apllications</p>
+              <p>(2023-2025) <br />IGDTUW</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a highly motivated student with strong skills in Python, Java, SQL, PHP, Excel
+              and Power BI. Eager to expand my knowledge and tackle real-world
+              challenges. Dedicated to producing high-quality work, I thrive in team
+              environments and aim to make meaningful contributions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">SKILLS</h1>
+      <div class="education-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="education-sub-title">LANGUAGES</h2>
+            <div class="skills-area">
+              <div class="skill">
+                <div class="skill-title">PYTHON</div>
+                <div class="skill-bar"></div>
+                <div class="python skill-fill">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">JAVA</div>
+                <div class="skill-bar"></div>
+                <div class="java skill-fill">
+                  <span class="skill-percent">70%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">SQL</div>
+                <div class="skill-bar"></div>
+                <div class="sql skill-fill">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar"></div>
+                <div class="html skill-fill">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar"></div>
+                <div class="css skill-fill">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="education-sub-title">FRAMEWORKS</h2>
+            <div class="skills-area">
+              <div class="skill">
+                <div class="skill-title">STREAMLIT</div>
+                <div class="skill-bar"></div>
+                <div class="st skill-fill">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">BOOTSTRAP</div>
+                <div class="skill-bar"></div>
+                <div class="bt skill-fill">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">LANGCHAIN</div>
+                <div class="skill-bar"></div>
+                <div class="lc skill-fill">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">NLTK</div>
+                <div class="skill-bar"></div>
+                <div class="nltk skill-fill">
+                  <span class="skill-percent">70%</span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">SPACY</div>
+                <div class="skill-bar"></div>
+                <div class="spc skill-fill">
+                  <span class="skill-percent">70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/p1.png"
+                alt="Project 1"
+                class="project-img1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harshita-2109/Movie_Recommender_System'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://movierecommendersystem-bdxmpuzg8wmxsoanj2tfcr.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/p2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Kaun Banega Crorepati App</h2>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harshita-2109/KBC-using-python'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/p3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proctor Planner</h2>
+            <br>
+            <br>
+            
+          
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">harshitabhardwaj021@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/harshita-bhardwaj-755871312/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Harshita Bhardwaj. All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+        var typed = new Typed('#element', {
+            strings: ['Student', 'Web Developer', 'Data Analyst', 'Software Developer'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
